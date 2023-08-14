@@ -1,0 +1,53 @@
+@font-face {
+    font-family: primary;
+    src: url(https://cdn.utopia.pizza/editor/sample-assets/stretchpro.woff);
+}
+
+@font-face {
+    font-family: primary-basic;
+    src: url(https://cdn.utopia.pizza/editor/sample-assets/stretchpro-basic.woff);
+}
+ 
+:root {
+    --off-white: #e9e9d2;
+    --purple: #91107b;
+    --light-purple: #832a7450;
+    --orange: #ffaf47;
+    --yellow: #fce065;
+
+    --primary: primary;
+    --primary-basic: primary-basic;
+    --secondary: 'Roboto Mono';
+    --safety: 'sans-serif';
+}
+
+
+.star {
+    margin: -42px 0px;
+    animation: 3s infinite alternate star-bounce; 
+
+}
+
+@keyframes star-bounce {
+    from {
+        margin: -42px 0px;
+    }
+  
+    to {
+        margin: -28px 0px;
+    }
+}
+
+.title-sticker {
+    animation: 10s linear infinite rotate;
+    /* animation: 1s forwards rotate; */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
